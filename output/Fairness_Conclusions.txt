@@ -1,0 +1,37 @@
+
+Preface: As stated in the KenSci Research, "A selection rate for any race, sex, or ethnic group which is less than four-fifths (4/5) (or eighty percent) of the rate for the group with the highest rate will generally be regarded... as evidence of adverse impact." Based on this premise, I will determine which of my models are the most biased when checking between foreign and non-foreign workers, men and women (with some data skew explained), and the differences between low income vs high income persons (as determined by the amount in their savings account).
+
+COMPARISON 1 - Foreign vs. Non-Foreign Workers
+
+Why: Immigrants are historically misrepresented and harmed from people's biases throughout history. 
+
+Performance: When comparing the impact on foreign workers, the models which performed best included NB (Naive Bayes), LR (Logistic Regression), DT (Decision Tree), (XGB) XGBoost, then (RB) Random Forest. On determining credit on non-foreign workers (aka the majority), the best best performance models were NB, RF, DT, LR, then XGB. Since NB had best performance metrics on both, we can determine it had the best performance for this feature, then DT and LR are the next best.
+
+Fairness: In most models, the difference between non-foreigners and foreigners in the positive predictive parity difference was a little less than or equal to 20%. Since 20% is the minimum stat to prove discrimination towards a class, I would say that this is a noticebly significant difference between foreign and german-born workers when determining credit score. Overall, NB also has the least disparity between discriminating against foreigners out of all the models. 
+
+Conclusion: Since Naive Bayes was the most accurate of all the models for performance and fairness in regards to guessing the credit score of foreign or non-foreign born workers, it is easy to say that NB was the best model for this feature.
+
+COMPARISON 2 - Women Vs. Men
+
+Why: Women have hisorically been harmed from bias. 
+
+Data Skew: It is important to note that this study had no way to easily differentiate women from men, there were only a few classes which specifically had only women and men and their marital status' were different each time so we could not even get one equal class representation. However, we march forward even with data which may be skewed, doing our best as ml scientists to work with the data we have. 
+
+Performance: When comparing models performance on single women, in average RF, LR, XGB, DT, NB had the best performance in that order. When comparing models on metrics on divorced men, the models performed best in order of RF, LR, XGB, DT, and NB. Therefore, their performance orders were the same. 
+
+Fairness: Even though LR was the second best model in performance, it had the most high disparity ratios between single women and other categories. For divorced men, XGBoost and Naive Bayes gave divorced men a much higher, positive equal odds difference and positive predictive disparity ratio, meaning that they were statistically significantly more likely to have a higher credit score than other people. While DT doesn't give men that much of a leg up, it does immensely give women a huge leg up in the equalized odds ratio. Random Forest had the 
+best odds in this case for treating women aand men fairly and not showing a strong preference to either. 
+
+Notes: There are many highlighted and flagged fields in comparing single female to other classes for credit scores, this may indiciate bias in the models or may be a reflection that single females have worse credit scores in the real world. More research is needed.
+
+Conclusion: Random Forest proved to have the best performance metrics on both the female and male model and proved to be the least biased option overall when trying to make sure men weren't given too high of a opportunity difference and that women had a low difference in disparity compared to other classes. 
+
+COMPARISON 3 - Low vs. High Income (as determined by savings)
+
+Why: Since low-income people are consistently disadvantaged at gaining important necessities, getting access to things, they most likely need better credit scores and loans than high income people, yet, I would get they do not since credit scores are impacted by so many metrics. 
+
+Data Notes: Suprisingly, those with low income did not have any metrics which differentiated or showed that they were biased against when compared to other classes.  When guessing the credit scores of high income people, the equalized odds were significantly in their favor! They are 20-30% more likely than other classes to have goodcredit scores as shown in equal opportunity diference and between 40-70% more likely to have good credit scores even when compared to people just like them in most ways but except with a higher amount of savings. 
+
+Performance: The best models on guessing the credit scores of low income people was LR, DT, XGB, RF, NB respectively. The best performance metric models on guessing high income credit scores included XGB, LR, DT, RF, NB in respectively. 
+
+Conclusion: Overall, the least biased but highest performing model in both categories was DT, since it gave high income people a more normalized odd at getting a good credit score while also being at least 2nd or 3rd best in performance.

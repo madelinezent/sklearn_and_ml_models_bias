@@ -1,0 +1,17 @@
+# Developmental files/folders
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+.vscode/
+
+# IPython checkpoints
+.ipynb_checkpoint/
+*-checkpoint.ipynb
+
+# Mac Files
+.DS_Store
