@@ -18,7 +18,7 @@ Data Analysis of Different Features in the German Credit Dataset Using a TableOn
 
 Fairness Evaluation of single woman compared to other people (divorced women/men, single men, widowed women/men).
 
-![feature fairness evaluation](example_images/Fairness Evaluation.png)
+![feature fairness evaluation](example_images/fairness_evaluation.png)
 
-![Model Comparison Metrics] (example_images/sklearn_model_comparisons.png)
+![Model Comparison Metrics](example_images/sklearn_model_comparisons.png)
 
