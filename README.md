@@ -1,32 +1,24 @@
 Name: Deline Zent
 Date: 12/12/20
-TCSS 455 - Machine Learning
-Assignment 4
 
-HOW TO RUN:
-In the main directory, go to Deline_Zent_A4. I have made the data file work from any directory, but unfortunately, as much as I tried the fairmlhealth library wouldn't work by using the OS created path. 
+Description:
+In this project, I have utilized multiple sklearn machine learning models to analyze the South German Credit Dataset then compared their performance metrics including their AUC, precision, recall, F-score, and fairness as determined by the Fair ML Health library. After comparing their metrics to their fairness, I have written a short paper in the Output folder describing the best model to select to prevent bias but still maintain high performing machine-learning models. Model metrics and fairness are calculated within the jupyter notebook named Deline_Zent_A4.
 
-STEP 1: In cell 3, you will need to put your local file path for the fair ml health library into the 4th line. This is the only interaction you will need with this notebook. Make the path to the main folder contained within the input folder, The Fair ML Health Library Master folder.
+How to Run:
 
-STEP 2: Press run all and sit back and watch the code run. 
-_________________________________________________________________________________________
+Step 1: Open Deline_Zent_A4. In cell 3, you will need to put your local file path for the fair ml health library into the 4th line. This is the only interaction you will need with this notebook. Make the path to the main folder contained within the input folder, The Fair ML Health Library Master folder.
 
-PART 1: Solution is contained with the jupyter notebook and has a table.png in the output folder as well.
-PART2: Fairmlhealth testing is contained within the notebook and my seperate document with conclusions is contained within the output folder.
-_________________________________________________________________________________________
+Step 2: Press run all.
 
-What's in each folder?
-INPUT: Contains the fair ml health library and the german credit dataset
-OUTPUT: Contains a picture of the table we needed to generate in part 1 (which is also in the notebook) and a Fairness_Conclusions.txt which explains my conclusions from the 
+Images of Project
 
-_________________________________________________________________________________________
+Data Analysis of Different Features in the German Credit Dataset Using a TableOne.
 
-What did I learn?
+![credit features table one](example_images/credit_score_data_analysis.png)
 
-I feel much more confident in my usage of importing external modules, working with built in models, and determining the fairness of these models. Next time, I hope I'd have time to learn how to use os better to make your life easier.
+Fairness Evaluation of single woman compared to other people (divorced women/men, single men, widowed women/men).
 
-_________________________________________________________________________________________
+![feature fairness evaluation](example_images/Fairness Evaluation.png)
 
-Final Notes
+![Model Comparison Metrics] (example_images/sklearn_model_comparisons.png)
 
-Thank you for this class! I feel I learned and grew a lot. When I started, I didn't even know how to code 1 line in python but now I know what a neural network is!
