@@ -20,5 +20,7 @@ Fairness Evaluation of single woman compared to other people (divorced women/men
 
 ![feature fairness evaluation](example_images/fairness_evaluation.png)
 
+Comparison of different sklearn model performance metrics.
+
 ![Model Comparison Metrics](example_images/sklearn_model_comparisons.png)
 
